@@ -1,5 +1,12 @@
+import random
 def main():
-	print('You rolled a die')
-	if __name__== "__main__":
+	dicerolls = 2
+	dicesum = 0
+	for i in range(0, dicerolls):
+		roll = random.randint(1, 6)
+		dicesum += roll
+		print(f'you rolled a {roll}')
+	print(f'you rolled a total of {dicesum}')
+	if __name__=="__main__":
 		main()
-	print('You rolled a die')
+
